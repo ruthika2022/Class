@@ -133,6 +133,34 @@ align-items:center;
 justify-content:center;
 }
 
+
+.box{
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    border: none;
+    border-radius: 12px;
+    padding: 14px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.box a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+
+.box:hover{
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.box:active{
+    transform: translateY(0);
+}
+
 @media(max-width:768px){
 #mobileControls{
 display:flex;
@@ -180,6 +208,7 @@ display:flex;
 </div>
 
 </div>
+    <button class="box"><a href="./index.html">Back</a></button>
 
 <script>
 
